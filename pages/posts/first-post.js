@@ -1,9 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
+import Layout from '../../components/layout'
 
-const FirstPost = (props: any) => {
+const FirstPost = (props) => {
   return (
-    <>
+    <Layout>
+      <Head>
+        <title>First Post</title>
+      </Head>
       <h1>First Post!</h1>
       <h2>
         Go Back to{' '}
@@ -11,7 +16,7 @@ const FirstPost = (props: any) => {
           <a>Home Page</a>
         </Link>
       </h2>
-    </>
+    </Layout>
   ) 
   
 
